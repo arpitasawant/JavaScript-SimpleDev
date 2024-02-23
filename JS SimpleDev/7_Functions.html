@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <!-- Rules for function names:
+    1. Can't use special words Example:function
+    2. Can't start with a number 
+    3. Can't use special characters except: $_ -->
+
+    <script>
+      function function1() {
+        console.log("Hello");
+      }
+
+      console.log(function1());
+
+      //   Return = gets a value out of a function
+      //   Parameter = puts a value into a function
+
+    /* Rules for function names:
+    1. Can't use special words Example:function
+    2. Can't start with a number 
+    3. Can't use special characters except: $_ 
+    Best practice = use camelCase*/
+
+      function calculateTax(cost,taxPercent){
+        console.log(cost * taxPercent);
+      }
+
+      calculateTax(2000,0.2);
+    </script>
+  </body>
+</html>

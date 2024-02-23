@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <style>
+
+    .amazon-button{
+        background-color: rgb(255, 216, 20);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border: none;
+        font-weight: bold;
+        border-radius: 50px;
+    }
+
+    .request{
+        font-weight: bold;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .schedule{
+        font-weight: bold;
+        padding: 10px;
+        background-color: rgb(230,230,230);
+        color: black;
+        border-radius: 5px;
+        border: none;
+    }
+    </style>
+</head>
+<body>
+    <!-- 10a -->
+    <button class="amazon-button">Add to Cart</button>
+
+    <!-- 10b -->
+    <button class="uber-button request">Request now</button>
+    <button class="uber-button schedule">Schedule for later</button>
+
+    <!-- 10c -->
+    <button onclick="
+    const button = document.querySelector('is-toggled');
+    if (!button.classList.contains('is-toggled')) {
+        button.classList.add('is-toggled');
+      } else {
+        button.classList.remove('is-toggled');
+      }" class="js-button">Test</button>
+
+    <!-- 10d -->
+    <button class="is-toggled">Gaming</button>
+    <script>
+    const button = document.querySelector('.js-button');
+    console.log(button.classList.contains('js-button'));
+
+    
+    </script>
+</body>
+</html>

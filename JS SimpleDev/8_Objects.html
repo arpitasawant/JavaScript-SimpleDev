@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <!-- Object: An object groups multiple values together -->
+    <script>
+     /*   const product = {
+            name:'socks',
+            price:1090
+        };
+        console.log(product);
+        console.log(product.name);
+
+        // changing the property
+
+        product.name = 'cotton socks';
+        console.log(product);
+
+        // adding new property
+
+        product.newProperty = true;
+        console.log(product);
+
+        // delete
+
+        delete product.newProperty;
+        console.log(product);*/
+
+        const product2 = {
+            name:'shirt',
+            'delivery-time' : '1 day',
+            rating:{
+                stars:4.5,
+                count:87
+            },
+            // Function inside object = method
+            fun: function function1(){
+                console.log('function inside object');
+            }
+        };
+        console.log(product2);
+        console.log(product2.name);
+
+        console.log(product2.rating.count);
+        product2.fun();
+        // Bracket Notation - lets us use properties that don't work with dot notation
+
+        // which one should we use?
+        // -use dot notation by default
+        // for properties that don't work,use bracket notation
+        console.log(product2['delivery-time']);
+
+        // JSON
+        console.log(JSON.stringify(product2));
+
+        const jsonString = JSON.stringify(product2);
+
+        // convert json to javascript object 
+        console.log(JSON.parse(jsonString));
+
+        // destructuring
+
+        const object = {
+            message:'Good job!',
+            price:799
+        };
+        const {message,price} = object;
+        console.log(message);
+        console.log(price);
+
+        // Shorthand property
+
+        const object1 = {
+            message,
+
+            // Shorthand method
+
+            method(){
+                console.log('method');
+            }
+        };
+
+        console.log(object1);
+        object1.method();
+    </script>
+</body>
+</html>
